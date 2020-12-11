@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+#app1{
+    border: 1px solid red;
+}
+#app1 .output{}
+#app1 .actions{}
+#app2{
+    border: 1px solid black;
+}
+
+#app2 .tab-bar{
+    display: flex;
+}
+#app2 .tab-bar > li{
+    border: 3px solid black;
+    width: 50%;
+    text-align:center;
+}
+
+#app2 .tab-bar > li.selected{
+    background: yellowgreen;
+}
+
+
+#app2 .tab-content{
+
+}
+
+#app2 .tab-content > li{
+    display: none;
+}
+
+#app2 .tab-content > li.active{
+    display: block;
+}
+
+#app3{
+    border: 1px solid green;
+}
+
+#app3 .square{
+    border: 1px solid black;
+    width:10vw;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    transition: transform 1s;
+}
+
+#app3 .square.active{
+    transform: translateX(15vw);
+}
+#app4{
+    border: 1px solid blue;
+}
+
+#app4 .circle{
+    border: 1px solid black;
+    width: 10vw;
+    height: 10vw;
+    margin-top: 15vh;
+    margin-left: 15vw;
+    border-radius: 50%;
+}
+@keyframes change {
+    0%{
+        background: red;
+    }
+    100%{
+        background: blue;
+    }
+}
+
+#app4 .circle.active{
+    animation: change 1s infinite alternate linear;
+}
+body{
+    overflow: hidden;
+}
+body > .page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page > section{
+    width: 50vw;
+    height: 50vh;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
